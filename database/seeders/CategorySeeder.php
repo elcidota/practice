@@ -9,10 +9,10 @@ class CategorySeeder extends Seeder
 {
     public function run()
     {
-        Category::create(['category_name' => 'Electronics']);
-        Category::create(['category_name' => 'Clothing']);
-        Category::create(['category_name' => 'Food']);
-        Category::create(['category_name' => 'Books']);
-        Category::create(['category_name' => 'Furniture']);
+        Category::create(['category_name' => 'Electronics', 'description' => 'Devices and gadgets']);
+        Category::create(['category_name' => 'Clothing', 'description' => 'Apparel and fashion']);
+        Category::create(['category_name' => 'Food', 'description' => 'Groceries and consumables']);
+        Category::create(['category_name' => 'Books', 'description' => 'Educational and entertainment books']);
+        Category::create(['category_name' => 'Furniture', 'description' => 'Home and office furnishings']);
     }
 }
